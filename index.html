@@ -28,7 +28,7 @@
         }
        
 
-        button{
+        a{
             text-decoration: none;
             background-color: crimson;
             color:white;
@@ -43,19 +43,14 @@
         .signup{
         margin-right: 1.5%;
        }
-        button:hover{
+        a:hover{
             border: crimson 1px solid;
             padding: 10px 25px;
             color: crimson;
             background-color: white;
         }
 
-        #log{
-            border: 2px solid black;
-        }
-        .img{
-
-        }
+        
 
 
 
@@ -67,43 +62,12 @@
     <br><br><br>
     <p>Cloud computing is gaining significant attention, however, security is the biggest hurdle in its wide acceptance, because a number of customers are sharing the same cloud. This project aims at designing a new security method by using a hybrid cryptography system, for data security in the cloud and to protect data from unauthorized access or hackers in cloud at the time of data transmission by encrypting the user data. Confidentiality and Authentication are the main focus of our project. Therefore, this project is designed to deal with both of the issues using two algorithms – Blowfish Symmetric Algorithm (deals with data confidentiality ) and RSA asymmetric algorithm (deals with Authentication). This project will also include Secure Hash Algorithm for data integrity and will ensure Secure File Transfer of data over the internet.</p>
     <br><br><br>     
-    <div class="login" ><button onclick="document.getElementById('log')">LOGIN</button></div>
+    <div class="login" ><a href="#"
+        >LOGIN</a></div>
     <br><br>
-    <div class="signup" ><button onclick="document.getElementById('sign').style.display='block'">SIGN UP</a></div>
+    <div class="signup" ><a href="#">SIGN UP</a></div>
 
-    <div id="log">
-
-
-    <form class="loginDet" action="/actionPage.php" method="POST">
-        <div class="img">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="/images/1.png">
-        </div>
-        <div class="container">
-            <label for="user"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="user" required>
-
-            <label for="pass"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="pass" required>
-            <button type="submit">Login</button>
-            <label><input  type="checkbox" checked="checked" name="rememberMe">Remember Me</label>
-        </div>
-        <div class="container">
-            <button type="button" onclick="document.getElementById('log').style.display('none')">Cancel</button>
-            <span class="red"><a href="#">Forgot password?</a></span>
-        </div>
-
-
-
-
-
-    </form>
-</div>
-
-    <form id="signupDet">
-
-
-    </form>
+  <img src="/images/2-20.jpg">
     
 
     
