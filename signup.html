@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
         * {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -123,7 +123,7 @@
             color: darkblue;
         }
 
-        
+
 
         #p5 {
             font-size: 10px;
@@ -143,7 +143,7 @@
 
         }
 
-        .main3 input[type='submit'] {
+        .main3 button{
             padding: 5px 15px;
             width: 100%;
             background: linear-gradient(to right, orange, red);
@@ -151,6 +151,7 @@
             color: white;
             border: none;
             outline: none;
+            cursor: pointer;
         }
         a{
             text-decoration: none;
@@ -159,6 +160,7 @@
 </head>
 
 <body>
+<form action="signup.php" method="POST">
     <div class="main">
         <div class="template3">
             <div class="login3">
@@ -167,18 +169,18 @@
             <div class="main3">
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your e-mail ID">
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail ID" required="">
                 </div>
                 <div id="pwdo">
                     <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required="">
                 </div>
 
-                <p id="p4">Forgot <a href="#"><b>Password?</b></a></p>
+                <p id="p4">Forgot <a href="#">Password?</a></p>
 
                 <div>
 
-                    <input type="submit" value="SIGNUP">
+                    <button type="submit">Submit</button>
 
                     <p id="p5">or Sign up with-</p>
                 </div>
@@ -195,6 +197,7 @@
             </footer>
         </div>
     </div>
+</form>
 
 </body>
 
