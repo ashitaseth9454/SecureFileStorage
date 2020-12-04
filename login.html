@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+<<<<<<< HEAD
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+=======
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+>>>>>>> 00e1d7b9db99b257b5358bbb4a10c37c9000a96c
     <style>
         * {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,12 +28,12 @@
             background-attachment: fixed;
         }
 
-        .header {
-            color: brown;
-            font-size: 60px;
-            text-align: center;
-            margin-bottom: 100px;
-        }
+        /*.header {*/
+        /*    color: brown;*/
+        /*    font-size: 60px;*/
+        /*    text-align: center;*/
+        /*    margin-bottom: 100px;*/
+        /*}*/
 
         .main {
             display: flex;
@@ -85,7 +89,7 @@
             outline: none;
             border: none;
             border-bottom: 1px solid orange;
-            padding: 10px 0px;
+            padding: 10px 0;
             width: 100%;
         }
 
@@ -93,7 +97,7 @@
             outline: none;
             border: none;
             border-bottom: 1px solid orange;
-            padding: 10px 0px;
+            padding: 10px 0;
             width: 100%;
         }
 
@@ -105,16 +109,20 @@
 
         }
 
-        input[type='submit'] {
+        button{
             outline: none;
             border: none;
             border-radius: 20px;
             padding: 10px 20px;
             color: white;
+<<<<<<< HEAD
             background: linear-gradient(to right, orange, red);
 
 
 
+=======
+            background:linear-gradient(to right,orange, red) ;
+>>>>>>> 00e1d7b9db99b257b5358bbb4a10c37c9000a96c
         }
 
         #p1 {
@@ -129,14 +137,21 @@
         }
 
 
+<<<<<<< HEAD
         a {
             text-decoration: none;
         }
+=======
+        a{
+            text-decoration: none;
+        }
+
+>>>>>>> 00e1d7b9db99b257b5358bbb4a10c37c9000a96c
     </style>
 </head>
 
 <body>
-    <form class="loginDet" action="/actionPage.php" method="POST"></form>
+<form class="loginDet" action="login.php" method="POST">
     <div class="main">
         
         <div class="template1">
@@ -151,6 +166,7 @@
             </div>
             <div class="main1">
                 <div>
+<<<<<<< HEAD
                     <input type="email" name="email" id="email" placeholder="Enter your e-mail ID">
                 </div>
                 <div>
@@ -178,18 +194,19 @@
                 <div id="pwdo">
                     <label for="pwd">Password</label>
                     <input type="password" name="pwd" id="pwd" placeholder="Enter Password">
+=======
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail ID" required="">
+>>>>>>> 00e1d7b9db99b257b5358bbb4a10c37c9000a96c
                 </div>
-
-                <p id="p4">Forgot <b>Password?</b></p>
-
                 <div>
-
-                    <input type="submit" value="SIGNUP">
-
-                    <p id="p5">or Sign up with-</p>
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required="">
                 </div>
+                <p>Forgot <a href="#">Password?</a></p>
+                <button type="submit" value="LOGIN">login</button>
+                <p id="p1">Don't have an account? <a href="https://ashitaseth9454.github.io/SecureFileStorage/signup.html">Sign Up.</a></p>
             </div>
 
+<<<<<<< HEAD
             <footer>
                 <div class="socialnet2">
                     <div class="pink">
@@ -203,6 +220,11 @@
     </div>
 
 
+=======
+        </div>
+    </div>
+</form>
+>>>>>>> 00e1d7b9db99b257b5358bbb4a10c37c9000a96c
 </body>
 
 </html>

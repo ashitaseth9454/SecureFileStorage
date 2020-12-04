@@ -4,75 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload</title>
-    <style> 
-    * { padding: 0px;
-            margin: 0px;
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
             font-family: monospace;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
-    body{
-        
-        background-image: url(./images/nature.jpg);
-        background-repeat: no-repeat;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .main{
-        width: 96%;
-        height: 300px;
-        background-color:white;
-        
-        
-        margin-right: 30px;
-        margin-left: 30px;
-        padding: 10px;
-    }
-   
-    .useless{
-        height: 200px;
-    }
-    #btnfi{
-        outline: none;
+        body{
+
+            background-image: url(./images/nature.jpg);
+            background-repeat: no-repeat;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .main{
+            width: 96%;
+            height: 300px;
+            background-color:white;
+            margin-right: 30px;
+            margin-left: 30px;
+            padding: 10px;
+        }
+
+        .useless{
+            height: 200px;
+        }
+        #btnfi{
+            outline: none;
             border: none;
             border-radius: 20px;
             padding: 10px 20px;
             color: white;
-            background:linear-gradient(to right,orange, red) ;
-
-    }
-    #sub{
-        outline: none;
+            background:linear-gradient(to right,orange,red);
+        }
+        button{
+            outline: none;
             border: none;
             border-radius: 20px;
             padding: 10px 20px;
             color: white;
-            background:linear-gradient(to right,orange, red) ;
-    }
-    .upload, .submit{
-        padding: 30px;  
-      
-    }
-
-
-
+            background:linear-gradient(to right,orange,red);
+            cursor: pointer ;
+        }
+        .upload, .submit{
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
-    <div class="useless"></div>
+<div class="useless"></div>
+<form action="upload.php" method="POST">
     <div class="main">
         <div class="upload">
-        <label id="btnfi" for="btn">Upload your File</label>
-        <input id="btn" type="file" id="myFile" name="filename" hidden>
+            <label id="btnfi">Upload your File</label>
+            <!--        <input id="btn" type="file" id="myFile" name="filename" value="" required="">-->
+            <input type="file" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required class="form-control" name="file"
+                   value="">
+        </div>
         <!--https://dev.to/faddalibrahim/how-to-create-a-custom-file-upload-button-using-html-css-and-javascript-1c03- is site pe file choosen vala change karna hai-->
-        </div>
-<div class="submit">
-          <label id="sub" for="eands">Click to Encrypt and Store</label>
-        <input type="submit" name="Encrypt and Store" id="eands" hidden>
-        </div>
     </div>
-    
+    <div class="submit">
+        <!--          <label id="sub" for="eands">Click to Encrypt and Store</label>-->
+        <button type="submit" name="Encrypt and Store" id="eands">Click to Encrypt and Store</button>
+    </div>
+</form>
+</div>
+
 </body>
 </html>
